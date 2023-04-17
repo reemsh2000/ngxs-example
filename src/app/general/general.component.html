@@ -35,7 +35,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let contents of userInfo; index as i">
+          <tr *ngFor="let contents of userInfo$|async; index as i">
             <th scope="row">{{contents.id}}</th>
             <td>{{contents.name}}</td>
             <td>{{contents.username}}</td>

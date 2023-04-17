@@ -31,9 +31,9 @@ export class GeneralComponent implements OnInit {
 
     this.store.dispatch(new GetUsers());
 
-    this.userInfo$.subscribe((returnData) => {
-      this.userInfo = returnData;
-    })
+    // this.userInfo$.subscribe((returnData) => {
+    //   this.userInfo = returnData;
+    // })
   }
 
   addUser() {
